@@ -1,0 +1,2 @@
+br/com/siecola/aws_project01/AwsProject01ApplicationTests.java
+ br.com.siecola.aws_project01.AwsProject01ApplicationTests
