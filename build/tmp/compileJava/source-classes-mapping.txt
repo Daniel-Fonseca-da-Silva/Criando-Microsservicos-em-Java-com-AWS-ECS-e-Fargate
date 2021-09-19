@@ -1,0 +1,4 @@
+br/com/siecola/aws_project01/AwsProject01Application.java
+ br.com.siecola.aws_project01.AwsProject01Application
+br/com/siecola/aws_project01/controller/TestController.java
+ br.com.siecola.aws_project01.controller.TestController
