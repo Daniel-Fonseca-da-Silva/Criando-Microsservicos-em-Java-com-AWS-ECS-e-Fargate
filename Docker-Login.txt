@@ -1,1 +1,13 @@
-sudo docker login --username=NOME DE USUARIO
+sudo docker login --username=NameUserDockerHub
+
+Docker push - Error - requested access to the resource is denied
+Solution -> docker login -u "myusername" -p "mypassword" docker.io
+docker push myusername/myimage:0.0.1
+
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+Solution ->
+sudo groupadd docker
+sudo usermod -aG docker $(whoami)
+systemctl start docker
+systemctl enable docker
+systemctl restart docker
