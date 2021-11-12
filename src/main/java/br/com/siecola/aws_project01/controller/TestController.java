@@ -18,14 +18,21 @@ public class TestController {
 
     @GetMapping("/dog/color")
     public ResponseEntity<?> dogColor() {
-        LOG.info("Test controller - Always black!");
+        LOG.info("color of your dog!");
         return ResponseEntity.ok("Always black!");
     }
 
     @GetMapping("/dog/id/{id}")
     @ResponseBody
     public ResponseEntity<?> getId(@PathVariable("id") String id) {
-        LOG.info("Test controller - this is my test! with" + id);
+        LOG.info("The id of your dog is - id: {}", id);
         return ResponseEntity.ok().body(id);
+    }
+
+    @GetMapping("/dog/age/{age}")
+    @ResponseBody
+    public ResponseEntity<?> GetName(@PathVariable("age") Long age) {
+        LOG.info("The age of your dog is - age: {}",  age);
+        return ResponseEntity.ok().body(age);
     }
 }
