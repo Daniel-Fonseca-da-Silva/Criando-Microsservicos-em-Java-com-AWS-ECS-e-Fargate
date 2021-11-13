@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 public class Product {
     @Id
-    @Generated(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(length = 32, nullable = false)
